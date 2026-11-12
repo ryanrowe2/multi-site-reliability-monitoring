@@ -1,0 +1,4 @@
+{
+  "site-a.example.com": {"status_code": 302, "redirect_location": "https://unexpected.example.net/login"},
+  "site-b.example.org": {"status_code": 200, "body": "Healthy"}
+}

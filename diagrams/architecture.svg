@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="580" viewBox="0 0 1200 580" role="img" aria-label="Offline input and integrity checks flow through classification into state transitions and atomic persistence">
+<rect width="1200" height="580" fill="#f7f9fc"/><rect x="36" y="32" width="1128" height="516" rx="20" fill="white" stroke="#dbe2ec"/>
+<text x="78" y="88" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#12233d">Offline monitoring and event lifecycle</text>
+<text x="78" y="119" font-family="Arial, sans-serif" font-size="15" fill="#4b617c">Synthetic inputs only · No calls to company infrastructure · Scoped incidents and replayable events</text>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#456a9d"/></marker></defs>
+<g font-family="Arial, sans-serif" text-anchor="middle">
+<rect x="78" y="182" width="212" height="98" rx="13" fill="#e8f1ff" stroke="#92b4e2"/>
+<text x="184" y="220" font-size="18" font-weight="700" fill="#14345e">HTTPS observations</text><text x="184" y="246" font-size="14" fill="#395676">Synthetic HTTP/TLS/body</text>
+<rect x="78" y="348" width="212" height="98" rx="13" fill="#eef3e6" stroke="#9eb88f"/>
+<text x="184" y="387" font-size="18" font-weight="700" fill="#254e2a">Plugin fixtures</text><text x="184" y="412" font-size="14" fill="#47664c">Core + Pro digests</text>
+<rect x="362" y="182" width="205" height="98" rx="13" fill="#e8f1ff" stroke="#92b4e2"/>
+<text x="465" y="220" font-size="18" font-weight="700" fill="#14345e">Classifier</text><text x="465" y="246" font-size="14" fill="#395676">Stable fault categories</text>
+<rect x="362" y="348" width="205" height="98" rx="13" fill="#eef3e6" stroke="#9eb88f"/>
+<text x="465" y="387" font-size="18" font-weight="700" fill="#254e2a">Integrity scanner</text><text x="465" y="412" font-size="14" fill="#47664c">Cross-site consistency</text>
+<rect x="642" y="267" width="198" height="107" rx="13" fill="#fff4df" stroke="#dab36b"/>
+<text x="741" y="304" font-size="18" font-weight="700" fill="#704815">Incident engine</text><text x="741" y="331" font-size="14" fill="#785f35">New · Changed · Reminder</text><text x="741" y="351" font-size="14" fill="#785f35">Recovery · Unknown gaps</text>
+<rect x="913" y="182" width="200" height="98" rx="13" fill="#efe9ff" stroke="#b2a2dc"/>
+<text x="1013" y="220" font-size="18" font-weight="700" fill="#48346a">State + outbox</text><text x="1013" y="246" font-size="14" fill="#68568a">JSON + locked journal</text>
+<rect x="913" y="348" width="200" height="98" rx="13" fill="#edf0f3" stroke="#9eacbb"/>
+<text x="1013" y="387" font-size="18" font-weight="700" fill="#263e5a">Stdout handoff</text><text x="1013" y="412" font-size="14" fill="#52677f">Flush, then acknowledge</text>
+</g>
+<g fill="none" stroke="#456a9d" stroke-width="3" marker-end="url(#arrow)">
+<path d="M290 231 H362"/><path d="M290 397 H362"/>
+<path d="M567 231 H604 V302 H642"/><path d="M567 397 H604 V344 H642"/>
+<path d="M840 296 H879 V231 H913"/><path d="M1013 280 V348"/>
+</g><text x="79" y="511" fill="#61748f" font-family="Arial, sans-serif" font-size="13">Pending events are persisted before stdout and acknowledged after a successful flush.</text><text x="79" y="534" fill="#61748f" font-family="Arial, sans-serif" font-size="13">Batch size: 128 · Stable delivery IDs · Backpressure preserves unevaluated transitions for retry · Independent flush mode</text></svg>

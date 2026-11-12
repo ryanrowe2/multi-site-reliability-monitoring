@@ -1,0 +1,4 @@
+{
+  "site-a.example.com": {"transport_error": "tls"},
+  "site-b.example.org": {"status_code": 200, "body": "Healthy"}
+}

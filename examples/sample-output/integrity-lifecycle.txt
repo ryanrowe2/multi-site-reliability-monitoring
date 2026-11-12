@@ -1,0 +1,86 @@
+
+### Consistent fleet
+{
+    "mode": "integrity",
+    "timestamp_utc": "2026-01-01T00:00:00Z",
+    "events": [],
+    "active_issues": {},
+    "unverified_targets": [],
+    "gap_since_previous_run_seconds": null,
+    "monitoring_gap_exceeded": false,
+    "observations": {},
+    "fingerprints": {
+        "site-a.example.com": "3625c8c415435440c2d2f9abbf1637c8b6122554932034daac4fb186b803ff08",
+        "site-b.example.org": "3625c8c415435440c2d2f9abbf1637c8b6122554932034daac4fb186b803ff08"
+    },
+    "core_fingerprints": {
+        "site-a.example.com": "399574badc069e33068531bb6baf3cd574d8e9469a4a8311bd1c7bcbd65602e4",
+        "site-b.example.org": "399574badc069e33068531bb6baf3cd574d8e9469a4a8311bd1c7bcbd65602e4"
+    },
+    "source": "synthetic_offline_demo"
+}
+
+### Fingerprint divergence
+{
+    "mode": "integrity",
+    "timestamp_utc": "2026-01-01T00:30:00Z",
+    "events": [
+        {
+            "id": "699838484af3f56b8c661e16cc5dbfdc",
+            "type": "new",
+            "target": "site-a.example.com",
+            "code": "integrity_problem",
+            "detail": "fleet_pro_fingerprint_divergence, pro_baseline_fingerprint_mismatch",
+            "at": 1767227400
+        }
+    ],
+    "active_issues": {
+        "site-a.example.com": {
+            "code": "integrity_problem",
+            "detail": "fleet_pro_fingerprint_divergence, pro_baseline_fingerprint_mismatch"
+        }
+    },
+    "unverified_targets": [],
+    "gap_since_previous_run_seconds": 1800,
+    "monitoring_gap_exceeded": false,
+    "observations": {},
+    "fingerprints": {
+        "site-a.example.com": "c39bb2da59874060bebdaa2eb081020fdd0877a5fd6e4552632c3433de9d58d5",
+        "site-b.example.org": "3625c8c415435440c2d2f9abbf1637c8b6122554932034daac4fb186b803ff08"
+    },
+    "core_fingerprints": {
+        "site-a.example.com": "399574badc069e33068531bb6baf3cd574d8e9469a4a8311bd1c7bcbd65602e4",
+        "site-b.example.org": "399574badc069e33068531bb6baf3cd574d8e9469a4a8311bd1c7bcbd65602e4"
+    },
+    "source": "synthetic_offline_demo"
+}
+
+### Restored matching fingerprints
+{
+    "mode": "integrity",
+    "timestamp_utc": "2026-01-01T01:00:00Z",
+    "events": [
+        {
+            "id": "3c353c87a7a05bf7ed02dcbd49d92a6c",
+            "type": "recovered",
+            "target": "site-a.example.com",
+            "code": "integrity_problem",
+            "detail": "fleet_pro_fingerprint_divergence, pro_baseline_fingerprint_mismatch",
+            "at": 1767229200
+        }
+    ],
+    "active_issues": {},
+    "unverified_targets": [],
+    "gap_since_previous_run_seconds": 1800,
+    "monitoring_gap_exceeded": false,
+    "observations": {},
+    "fingerprints": {
+        "site-a.example.com": "3625c8c415435440c2d2f9abbf1637c8b6122554932034daac4fb186b803ff08",
+        "site-b.example.org": "3625c8c415435440c2d2f9abbf1637c8b6122554932034daac4fb186b803ff08"
+    },
+    "core_fingerprints": {
+        "site-a.example.com": "399574badc069e33068531bb6baf3cd574d8e9469a4a8311bd1c7bcbd65602e4",
+        "site-b.example.org": "399574badc069e33068531bb6baf3cd574d8e9469a4a8311bd1c7bcbd65602e4"
+    },
+    "source": "synthetic_offline_demo"
+}

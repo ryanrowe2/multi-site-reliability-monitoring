@@ -1,0 +1,4 @@
+{
+  "site-a.example.com": {"status_code": 200, "body": "<html>Healthy example A</html>"},
+  "site-b.example.org": {"status_code": 200, "body": "<html>Healthy example B</html>"}
+}

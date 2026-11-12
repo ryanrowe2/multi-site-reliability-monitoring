@@ -1,0 +1,224 @@
+
+### Healthy (2026-01-01T00:00:00Z)
+{
+    "mode": "uptime",
+    "timestamp_utc": "2026-01-01T00:00:00Z",
+    "events": [],
+    "active_issues": {},
+    "unverified_targets": [],
+    "gap_since_previous_run_seconds": null,
+    "monitoring_gap_exceeded": false,
+    "observations": {
+        "site-a.example.com": {
+            "healthy": true,
+            "code": "healthy",
+            "detail": "Healthy HTTP response",
+            "status_code": 200
+        },
+        "site-b.example.org": {
+            "healthy": true,
+            "code": "healthy",
+            "detail": "Healthy HTTP response",
+            "status_code": 200
+        }
+    },
+    "fingerprints": {},
+    "core_fingerprints": {},
+    "source": "synthetic_offline_demo"
+}
+
+### New failure (2026-01-01T00:30:00Z)
+{
+    "mode": "uptime",
+    "timestamp_utc": "2026-01-01T00:30:00Z",
+    "events": [
+        {
+            "id": "a78464745811f07aefc13f3e2d9afea0",
+            "type": "new",
+            "target": "site-a.example.com",
+            "code": "http_error",
+            "detail": "HTTP 500",
+            "at": 1767227400
+        }
+    ],
+    "active_issues": {
+        "site-a.example.com": {
+            "code": "http_error",
+            "detail": "HTTP 500"
+        }
+    },
+    "unverified_targets": [],
+    "gap_since_previous_run_seconds": 1800,
+    "monitoring_gap_exceeded": false,
+    "observations": {
+        "site-a.example.com": {
+            "healthy": false,
+            "code": "http_error",
+            "detail": "HTTP 500",
+            "status_code": 500
+        },
+        "site-b.example.org": {
+            "healthy": true,
+            "code": "healthy",
+            "detail": "Healthy HTTP response",
+            "status_code": 200
+        }
+    },
+    "fingerprints": {},
+    "core_fingerprints": {},
+    "source": "synthetic_offline_demo"
+}
+
+### Unchanged failure (2026-01-01T01:00:00Z)
+{
+    "mode": "uptime",
+    "timestamp_utc": "2026-01-01T01:00:00Z",
+    "events": [],
+    "active_issues": {
+        "site-a.example.com": {
+            "code": "http_error",
+            "detail": "HTTP 500"
+        }
+    },
+    "unverified_targets": [],
+    "gap_since_previous_run_seconds": 1800,
+    "monitoring_gap_exceeded": false,
+    "observations": {
+        "site-a.example.com": {
+            "healthy": false,
+            "code": "http_error",
+            "detail": "HTTP 500",
+            "status_code": 500
+        },
+        "site-b.example.org": {
+            "healthy": true,
+            "code": "healthy",
+            "detail": "Healthy HTTP response",
+            "status_code": 200
+        }
+    },
+    "fingerprints": {},
+    "core_fingerprints": {},
+    "source": "synthetic_offline_demo"
+}
+
+### Six-hour reminder (2026-01-01T06:30:00Z)
+{
+    "mode": "uptime",
+    "timestamp_utc": "2026-01-01T06:30:00Z",
+    "events": [
+        {
+            "id": "9dc9848f3ed77f398294a806f2f6fd8f",
+            "type": "reminder",
+            "target": "site-a.example.com",
+            "code": "http_error",
+            "detail": "HTTP 500",
+            "at": 1767249000
+        }
+    ],
+    "active_issues": {
+        "site-a.example.com": {
+            "code": "http_error",
+            "detail": "HTTP 500"
+        }
+    },
+    "unverified_targets": [],
+    "gap_since_previous_run_seconds": 19800,
+    "monitoring_gap_exceeded": true,
+    "observations": {
+        "site-a.example.com": {
+            "healthy": false,
+            "code": "http_error",
+            "detail": "HTTP 500",
+            "status_code": 500
+        },
+        "site-b.example.org": {
+            "healthy": true,
+            "code": "healthy",
+            "detail": "Healthy HTTP response",
+            "status_code": 200
+        }
+    },
+    "fingerprints": {},
+    "core_fingerprints": {},
+    "source": "synthetic_offline_demo"
+}
+
+### Changed failure (2026-01-01T07:00:00Z)
+{
+    "mode": "uptime",
+    "timestamp_utc": "2026-01-01T07:00:00Z",
+    "events": [
+        {
+            "id": "c0a348aab0d96be9bf6f593df76de353",
+            "type": "changed",
+            "target": "site-a.example.com",
+            "code": "transport_tls",
+            "detail": "Transport tls",
+            "at": 1767250800
+        }
+    ],
+    "active_issues": {
+        "site-a.example.com": {
+            "code": "transport_tls",
+            "detail": "Transport tls"
+        }
+    },
+    "unverified_targets": [],
+    "gap_since_previous_run_seconds": 1800,
+    "monitoring_gap_exceeded": false,
+    "observations": {
+        "site-a.example.com": {
+            "healthy": false,
+            "code": "transport_tls",
+            "detail": "Transport tls",
+            "status_code": null
+        },
+        "site-b.example.org": {
+            "healthy": true,
+            "code": "healthy",
+            "detail": "Healthy HTTP response",
+            "status_code": 200
+        }
+    },
+    "fingerprints": {},
+    "core_fingerprints": {},
+    "source": "synthetic_offline_demo"
+}
+
+### Recovered (2026-01-01T07:30:00Z)
+{
+    "mode": "uptime",
+    "timestamp_utc": "2026-01-01T07:30:00Z",
+    "events": [
+        {
+            "id": "be70da0a58f65fb241c8024e56e4cdb9",
+            "type": "recovered",
+            "target": "site-a.example.com",
+            "code": "transport_tls",
+            "detail": "Transport tls",
+            "at": 1767252600
+        }
+    ],
+    "active_issues": {},
+    "unverified_targets": [],
+    "gap_since_previous_run_seconds": 1800,
+    "monitoring_gap_exceeded": false,
+    "observations": {
+        "site-a.example.com": {
+            "healthy": true,
+            "code": "healthy",
+            "detail": "Healthy HTTP response",
+            "status_code": 200
+        },
+        "site-b.example.org": {
+            "healthy": true,
+            "code": "healthy",
+            "detail": "Healthy HTTP response",
+            "status_code": 200
+        }
+    },
+    "fingerprints": {},
+    "core_fingerprints": {},
+    "source": "synthetic_offline_demo"
+}

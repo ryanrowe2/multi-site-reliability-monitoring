@@ -1,0 +1,38 @@
+{
+  "hosts": [
+    "site-a.example.com",
+    "site-b.example.org"
+  ],
+  "reminder_seconds": {
+    "uptime": 21600,
+    "integrity": 86400
+  },
+  "integrity": {
+    "root": "../examples/fixtures/sites",
+    "sites": [
+      "site-a.example.com",
+      "site-b.example.org"
+    ],
+    "core_version": "9.1.0-demo",
+    "pro_header_version": "9.2.0-demo",
+    "pro_runtime_version": "9.2.0-demo",
+    "update_lock": "site-update-lock.php",
+    "update_lock_sha256": "f30630b97d330c686cca81ca72bff1f61c84b6b06f2c96022a7d14281b173895",
+    "baseline_sha256": "3625c8c415435440c2d2f9abbf1637c8b6122554932034daac4fb186b803ff08",
+    "core_baseline_sha256": "399574badc069e33068531bb6baf3cd574d8e9469a4a8311bd1c7bcbd65602e4"
+  },
+  "content_policies": {
+    "site-a.example.com": {
+      "min_body_bytes": 1
+    },
+    "site-b.example.org": {
+      "min_body_bytes": 1
+    }
+  },
+  "expected_interval_seconds": {
+    "uptime": 1800,
+    "integrity": 86400
+  },
+  "unverified_threshold_seconds": 3600,
+  "unverified_reminder_seconds": 21600
+}

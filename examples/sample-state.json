@@ -1,0 +1,29 @@
+{
+    "schema_version": 1,
+    "modes": {
+        "uptime": {
+            "issues": {
+                "site-a.example.com": {
+                    "code": "http_error",
+                    "detail": "HTTP 500",
+                    "first_seen": 1767227400,
+                    "last_seen": 1767227400,
+                    "last_notified": 1767227400
+                }
+            },
+            "last_run": 1767227400,
+            "inventory": [
+                "site-a.example.com",
+                "site-b.example.org"
+            ],
+            "unknown": [],
+            "unknown_history": {}
+        }
+    },
+    "outbox": {
+        "uptime": {
+            "pending": [],
+            "claim": null
+        }
+    }
+}

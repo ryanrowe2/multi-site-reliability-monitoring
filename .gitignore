@@ -1,0 +1,8 @@
+/vendor/
+/var/*
+!/var/.gitkeep
+.phpunit.cache/
+.phpunit-watcher.yml
+.DS_Store
+*.log
+.env

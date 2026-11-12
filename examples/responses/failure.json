@@ -1,0 +1,4 @@
+{
+  "site-a.example.com": {"status_code": 500, "body": "Server error"},
+  "site-b.example.org": {"status_code": 200, "body": "Healthy"}
+}

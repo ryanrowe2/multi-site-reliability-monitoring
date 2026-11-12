@@ -1,0 +1,22 @@
+{
+  "name": "portfolio/multi-site-reliability-monitoring",
+  "description": "Offline-first, synthetic PHP monitoring and WordPress integrity demonstration",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": "^8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Portfolio\\": "src/"
+    }
+  },
+  "scripts": {
+    "test": "php tests/run.php",
+    "lint": "php tools/lint.php",
+    "analyse": "php vendor/bin/phpstan analyse -c phpstan.neon --no-progress"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^2.1"
+  }
+}
