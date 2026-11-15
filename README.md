@@ -1,5 +1,11 @@
 # Multi-Site Infrastructure Monitoring & Automation
 
+**Operational problem:** Repeated website checks are only useful if they distinguish new incidents, ongoing failures, and recoveries instead of repeatedly sending the same alert.
+
+**Engineering response:** A stateful PHP monitoring demonstration, with incident transitions, retryable reporting, and WordPress/Elementor integrity checks. Start with [what you can actually run](#what-you-can-actually-run), then [quick start](#quick-start).
+
+**Scope:** Independently written synthetic portfolio implementation informed by real troubleshooting work; it does not monitor employer systems.
+
 **A real operational engineering problem, demonstrated with an independently written, reproducible PHP application.**
 
 While supporting California Machinery Movers, I investigated recurring WordPress failures, addressed Elementor-related compatibility problems across 31 installations, and developed a PHP CLI monitor for a 128-domain inventory. The historical source performs HTTPS/application diagnostics, compares failures against persisted JSON incident state, and reports newly detected, changed, persistent, and recovered conditions. A separate integrity mode inspects Elementor installations and compares SHA-256 directory fingerprints.
