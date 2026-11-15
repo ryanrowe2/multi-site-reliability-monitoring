@@ -16,9 +16,7 @@ While supporting California Machinery Movers, I investigated recurring WordPress
 
 ## Verified engineering release
 
-The finalized **CMM-CI-02** archive passed **30/30 external certification gates**. Its offline regression suite passed **334/334 tests** in each of PHP **8.2.32**, **8.3.6**, and **8.4.24**. Xdebug in-process line coverage was **89.6%**, **89.6%**, and **89.4%**, respectively; the coverage measurement excludes CLI subprocesses. PHPStan passed at the repository's configured **level 1** on all three runtimes, using a genuine Composer-resolved dependency lockfile.
-
-Those results come from the external certification evidence, **not from hosted GitHub Actions**. The repository's `ci.yml` workflow should be inspected separately after publication. See [validation and reproducibility](docs/validation.md) for scope and provenance.
+The offline CMM-CI-02 certification reported **334/334 passing tests** on PHP 8.2, 8.3 and 8.4, with approximately **89.4–89.6%** measured in-process line coverage. These figures come from external certification, not hosted GitHub Actions. The complete runtime versions, PHPStan configuration, coverage boundaries and reproducibility evidence are documented in [validation and reproducibility](docs/validation.md).
 
 ## What you can actually run
 
